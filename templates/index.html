@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% block title %}Dashboard | DailyLife Manager{% endblock %}{% block content %}
+{% extends "base.html" %}{% block title %}Dashboard | DailyLife Manager - DevOps CI/CD{% endblock %}{% block content %}
 <section class="hero"><div><p class="eyebrow">PERSONAL PRODUCTIVITY</p><h1>Good day Welcome to DailyLife Manager👋</h1><p>Organize your tasks, schedule, expenses and goals in one place.</p></div><div class="date-box">{{today}}</div></section>
 <section class="stats"><div class="stat"><span>Total Tasks</span><strong>{{stats.total_tasks}}</strong></div><div class="stat"><span>Completed</span><strong>{{stats.completed_tasks}}</strong></div><div class="stat"><span>Today's Spend</span><strong>₹{{"%.2f"|format(stats.today_expenses)}}</strong></div><div class="stat"><span>Active Goals</span><strong>{{stats.goals}}</strong></div></section>
 <div class="grid-2"><section class="panel"><div class="panel-head"><h2>Today's Tasks</h2><a class="button small" href="{{url_for('tasks')}}">Manage</a></div>
